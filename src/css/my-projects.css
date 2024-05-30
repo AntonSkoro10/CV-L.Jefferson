@@ -55,6 +55,10 @@
 }
 
 .projects-item-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   -webkit-tap-highlight-color: transparent;
   display: flex;
   align-items: center;
@@ -88,7 +92,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.55;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   background-color: transparent;
@@ -117,4 +121,56 @@
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 62px 0 68px;
+  }
+
+  .projects-title {
+    font-size: 108px;
+  }
+
+  .projects-list {
+    max-width: 100%;
+    gap: 60px;
+  }
+
+  .projects-item-img {
+    border-radius: 24px;
+    margin-bottom: 16px;
+  }
+
+  .projects-item-tech {
+    margin-bottom: 20px;
+  }
+  .projects-item-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects-item-title {
+    font-size: 36px;
+    max-width: 390px;
+    margin-bottom: 0;
+  }
+
+  .projects-item-btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects {
+    padding: 82px 0;
+  }
+
+  .projects-title {
+    margin-bottom: 80px;
+  }
+
+  .projects-list {
+    gap: 80px;
+  }
 }
