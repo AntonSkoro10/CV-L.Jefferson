@@ -1,0 +1,86 @@
+.tech-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.ticker {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.ticker:nth-child(1) {
+    background-color: #214136;
+    color: #F0F0F0;
+}
+
+.ticker:nth-child(2) {
+    background-color: #2A2D32;
+    color: #14C57C;
+}
+
+.ticker:nth-child(2) {
+    transform: rotateZ(1deg);
+}
+
+.ticker__wrapper.right {
+    display: flex;
+    
+    animation: tickerScrollRight 15s linear infinite;
+}
+
+.ticker__wrapper.left {
+    display: flex;
+    
+    animation: tickerScrollLeft 15s linear infinite;
+}
+
+.ticker__item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.ticker__item {
+    display: flex;
+    gap: 0px 15px
+}
+
+.ticker__item .ticker__text {
+    /* margin: 0 20px; */
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+
+.ticker-point {
+    display: inline-block;
+
+    width: 5px;
+    height: 5px;
+    background-color: #14C57C; 
+    margin: auto; 
+
+}
+
+@keyframes tickerScrollRight {
+    0% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    } 
+
+}
+
+@keyframes tickerScrollLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    } 
+}
