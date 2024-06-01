@@ -9,6 +9,16 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .faq-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 60px;
+  }
+}
+
 .faq-title-green {
   color: #14c57c;
 }
@@ -35,6 +45,19 @@
   gap: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .faq-item.ac .faq-title-n-btn.ac-header {
+    width: 656px;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .faq-item.ac .faq-title-n-btn.ac-header {
+    width: 544px;
+  }
+}
+
 .faq-title-ac {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -42,6 +65,14 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-title-ac {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
 }
 
 .faq-item.ac .faq-btn.ac-trigger {
@@ -66,6 +97,14 @@
   color: #f0f0f0;
 
   padding: 24px 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-item.ac .faq-text-box.ac-panel .faq-text.ac-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
 }
 
 .ac .ac-trigger::after {
