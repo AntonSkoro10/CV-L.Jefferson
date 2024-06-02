@@ -1,0 +1,76 @@
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 10px;
+    color: #292929;
+    }
+
+/* Медиазапрос для экранов шириной до 360px */
+@media (max-width: 360px) {
+    
+    .social-links ul {
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer-logo{
+    text-align: left;
+    }
+    .footer-text{
+        
+        
+    }
+    .social-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Медиазапрос для экранов шириной от 768px (планшеты) */
+@media (min-width: 768px) {
+    .social-links ul {
+        flex-direction: initial;
+        text-align: left;
+    }
+        .footer-logo {
+            text-align: left;
+        }
+        
+}
+
+/* Медиазапрос для экранов шириной от 1280px (десктопы) */
+@media (min-width: 1280px) {
+    .social-links ul {
+        flex-direction: row;
+    }
+}
