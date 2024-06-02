@@ -34,7 +34,7 @@ function isEmailValid(value) {
     addModalCloseEventListener();
   }
 
-  return isValid;
+  return;
 }
 
 formEl.form.addEventListener('submit', handleSubmit);
