@@ -1,0 +1,16 @@
+/*Mobile*/
+.reviews {
+margin-top: 80px;
+}
+  
+.reviews-title {
+font-weight: 400;
+font-size: 52px;
+line-height: 1.23;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white);
+text-align: center;
+margin-bottom: 40px;
+}
+  
