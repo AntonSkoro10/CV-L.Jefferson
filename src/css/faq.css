@@ -1,3 +1,4 @@
+/* TITLE & BACKGROUNG-IMG */
 .faq-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
@@ -9,6 +10,16 @@
   margin-bottom: 40px;
 }
 
+.faq-title-green {
+  color: #14c57c;
+}
+
+.faq-bcg-img {
+  display: none;
+}
+
+/* Tablet */
+
 @media screen and (min-width: 768px) {
   .faq-title {
     font-size: 108px;
@@ -19,10 +30,26 @@
   }
 }
 
-.faq-title-green {
-  color: #14c57c;
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+  .faq-container {
+    display: flex;
+    gap: 104px;
+  }
+
+  .faq-title-n-img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .faq-bcg-img {
+    display: block;
+    margin-top: 240px;
+  }
 }
 
+/* ACCORDION */
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -45,19 +72,6 @@
   gap: 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .faq-item.ac .faq-title-n-btn.ac-header {
-    width: 656px;
-    gap: 24px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .faq-item.ac .faq-title-n-btn.ac-header {
-    width: 544px;
-  }
-}
-
 .faq-title-ac {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -65,14 +79,6 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .faq-title-ac {
-    font-size: 20px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-  }
 }
 
 .faq-item.ac .faq-btn.ac-trigger {
@@ -99,14 +105,6 @@
   padding: 24px 0 0 0;
 }
 
-@media screen and (min-width: 768px) {
-  .faq-item.ac .faq-text-box.ac-panel .faq-text.ac-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-  }
-}
-
 .ac .ac-trigger::after {
   display: none;
 }
@@ -119,4 +117,37 @@
 .faq-item.ac .ac-trigger[aria-expanded='true'] .faq-svg-down {
   transform: rotate(180deg);
   background-color: #1e2023;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .faq-item.ac .faq-title-n-btn.ac-header {
+    width: 656px;
+    gap: 24px;
+  }
+
+  .faq-title-ac {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+
+  .faq-item.ac .faq-text-box.ac-panel .faq-text.ac-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1280px) {
+  .faq-list {
+    margin-top: 276px;
+  }
+
+  .faq-item.ac .faq-title-n-btn.ac-header {
+    width: 544px;
+  }
 }
