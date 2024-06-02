@@ -67,6 +67,7 @@
   background: #2a2d32;
   margin-left: auto;
   gap: 12px;
+  transition: all 250ms ease-in-out;
 }
 
 .projects-item-link:hover,
@@ -93,6 +94,7 @@
   background-color: transparent;
   position: relative;
   border: none;
+  transition: all 250ms ease-in-out;
 }
 
 .projects-btn::after {
