@@ -146,20 +146,37 @@
         grid-row: 1;
         margin-left: 368px;
       }
-    
-      
-      
-
-
-
-
-
   }
   
   @media only screen and (min-width: 1440px) {
     .benedits-container {
-      display: flex;
-      justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .second-heading {
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 124px; 
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #F0F0F0;
+    }
+
+    .heading-span {
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 124px; 
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #14c57c;
+    }
+
+    .div-benefits-img {
+        display: block;
+        max-width: 526px !important;
     }
 
     .benefits-div{
@@ -167,9 +184,11 @@
     }
 
     .benefits-list {
+        margin-top: 276px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
 } 
   }
+  
