@@ -62,6 +62,14 @@
   border-right: none;
   border-left: none;
   border-bottom: solid 1px #cccccc;
+
+  transition: background-color 0.1s ease;
+}
+
+.faq-item.ac.active {
+  background-color: #204136;
+  border: none;
+  border-radius: 16px;
 }
 
 .faq-item.ac .faq-title-n-btn.ac-header {
@@ -110,13 +118,13 @@
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='false'] .faq-svg-up {
-  background-color: #1e2023;
+  /* background-color: #1e2023; */
   transform: rotate(180deg);
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='true'] .faq-svg-down {
   transform: rotate(180deg);
-  background-color: #1e2023;
+  /* background-color: #1e2023; */
 }
 
 /* Tablet */
