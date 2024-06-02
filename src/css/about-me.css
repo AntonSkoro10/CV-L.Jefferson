@@ -1,159 +1,169 @@
-.abuot-me-header{
+.about-me{
+    background-image: url(../img/);
+}
+.about-me-educ-list-item::before,
+.about-me-role-list-item::before {
+    content: "";
+    display: inline-block;
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    background: #14c57c;
+    transform: rotate(-180deg);
+    position: relative;
+    left: 10px;
+    top: 20px;
+
+}
+.about-me-header {
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 64px; 
+    line-height: 64px;
     line-height: 1.23077;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f0f0f0;
     margin-bottom: 40px;
 }
-.abuot-me-header-span{
+
+.about-me-header-span {
     color: #14c57c;
 }
-
-.about-me-top-line{
+/* == top line */
+.about-me-top-line {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin-bottom: 40px;
 }
 
 /* ==== BIO ======= */
- .abuot-me-bio-list{
-  
+.about-me-bio-list {
     display: flex;
-    flex-direction: column; 
-    gap: 24px; 
-}   
+    flex-direction: column;
+    gap: 24px;
+}
 
-.abuot-me-bio-text{
+.about-me-bio-text {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #f0f0f0;
+    margin-top: 32px;
 }
+
 /* === img === */
-.abuot-me-img{
+.about-me-img {
     border-radius: 18px;
     width: 320px;
     height: 374px;
     margin-bottom: 40px;
 }
+
 /* ==== dscr ==== */
-.about-me-dscr-list{
+.about-me-dscr-list {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
 }
-.about-me-dscr-list-item{
-    width: 384px;
+
+.about-me-dscr-list-item {
+    width: 320px;
 }
+
 .about-me-educ-header,
 .about-me-role-header,
-.abuot-me-bio-header{
+.about-me-bio-header {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 32px;
-    line-height: 40px; 
+    line-height: 40px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #f0f0f0;
-    margin-bottom: 32px;
 }
-.about-me-dscr-list{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.about-me-dscr-list-item{
-    width: 320px;
-    height: 288px;
-   
-    
-}
+
 .about-me-educ-list,
-.about-me-role-list{
+.about-me-role-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .about-me-educ-list-text,
-.about-me-role-list-text{
+.about-me-role-list-text {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #f0f0f0;
+    margin-left: 32px;
 }
+
 @media screen and (min-width: 768px) {
-   
     .about-me-top-line {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 60px;
     }
-    .abuot-me-bio-list{
+
+    .about-me-bio-list {
         width: 336px;
         height: 600px;
     }
-    .abuot-me-img {
-        border-radius: 18px;
+
+    .about-me-img {
         width: 336px;
         height: 392px;
         margin-top: 368px;
-        }
-    .about-me-dscr-list{
+    }
+
+    .about-me-dscr-list {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 136px;
     }
+    .about-me-educ-list-item{
+        width: 384px
+    }
+ 
     .about-me-educ-header,
     .about-me-role-header,
-    .abuot-me-bio-header {
+    .about-me-bio-header {
         font-size: 36px;
-        line-height: 48px; 
+        line-height: 48px;
         line-height: 1.33333;
         letter-spacing: 0.01em;
     }
-    
 }
 
 @media screen and (min-width: 1280px) {
-    .abuot-me-header {
-            font-size: 108px;
-            line-height: 124px;
-            line-height: 1.14815;
-            letter-spacing: 0.02em;
-        }
-    
-        .about-me-top-line {
-            margin-bottom: 80px;
-        }
-    
-        .abuot-me-bio-list {
-            width: 488px;
-            height: 408px;
-        }
-        .abuot-me-img {
-            border-radius: 18px;
-            width: 384px;
-            height: 448px;
-            margin-top: 272px;
-        }
+    .about-me-header {
+        font-size: 108px;
+        line-height: 124px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+    }
 
-}
+    .about-me-top-line {
+        margin-bottom: 80px;
+    }
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
-    .container {
-        min-width: 320px;
-        max-width: 360px;
+    .about-me-bio-list {
+        width: 488px;
+        height: 408px;
+    }
+
+    .about-me-img {
+        width: 384px;
+        height: 448px;
+        margin-top: 272px;
     }
 }
