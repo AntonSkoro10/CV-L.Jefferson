@@ -104,8 +104,10 @@ function createModal({ title, message }) {
   return `
       <div id="myModal" class="modal">
         <div class="modal-content">
-          <button class="modal-closeBtn">X</button>
-          <h3 class="modal-title-a">${title}</h3>
+          <button class="modal-closeBtn"><svg class="modal-closeBtn-icon" width="24" height="24">
+          <use href="./img/icon.svg#icon-close"></use>
+          </svg></button>
+          <h3 class="modal-title">${title}</h3>
           <p class="modal-message">${message}</p>
         </div>
       </div>
@@ -125,12 +127,14 @@ function closeModal() {
 
 function showError(container, errorMessage) {
   const errorElem = container.querySelector('.error-message');
+  const emailInputContainer = formEl.input;
+
   if (errorElem) {
     errorElem.textContent = errorMessage;
   } else {
     const msgElem = document.createElement('span');
     msgElem.className = 'error-message';
     msgElem.textContent = errorMessage;
-    container.appendChild(msgElem);
+    emailInputContainer.insertAdjacentElement('afterend', msgElem);
   }
 }
