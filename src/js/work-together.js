@@ -23,6 +23,15 @@ function isEmailValid(value) {
     if (errorMessage) {
       errorMessage.remove();
     }
+    // Показуємо модальне вікно, якщо email правильний
+    const modalHTML = createModal({
+      title: 'Thank you for your interest in cooperation!',
+      message:
+        'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.',
+    });
+    formEl.modalContainer.insertAdjacentHTML('beforeend', modalHTML);
+    document.querySelector('#myModal').classList.add('show');
+    addModalCloseEventListener();
   }
 
   return isValid;
@@ -71,16 +80,26 @@ function handleSubmit(event) {
         document.querySelector('#myModal').classList.add('show');
         addModalCloseEventListener();
       } else {
-        // Show server error message
-        showError(formEl.form, data.error); // Assuming the server returns an 'error' field in the response
+        const modalHTML = createModal({
+          title: 'Submission Error',
+          message: data.error || 'An error occurred. Please try again later.',
+        });
+        formEl.modalContainer.insertAdjacentHTML('beforeend', modalHTML);
+        document.querySelector('#myModal').classList.add('show');
+        addModalCloseEventListener();
       }
     })
     .catch(error => {
-      showError(formEl.form, 'An error occurred. Please try again later.'); // Generic error message
+      const modalHTML = createModal({
+        title: 'Submission Error',
+        message: 'An error occurred. Please try again later.',
+      });
+      formEl.modalContainer.insertAdjacentHTML('beforeend', modalHTML);
+      document.querySelector('#myModal').classList.add('show');
+      addModalCloseEventListener();
     });
 }
 
-// Modal window
 function createModal({ title, message }) {
   return `
       <div id="myModal" class="modal">
