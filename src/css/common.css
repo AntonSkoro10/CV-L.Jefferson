@@ -28,6 +28,11 @@ p {
   margin: 0;
 }
 
+body {
+  background-color: var(--primary-bcg-color);
+  color: var(--primary-text-color);
+}
+
 p:last-child {
   margin-bottom: 0;
 }
