@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const accordionFaq = new Accordion(accordionContainerFaq, {
+    openOnInit: [0],
     onOpen: function (currentElement) {
       currentElement.classList.add('active');
     },
