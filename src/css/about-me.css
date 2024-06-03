@@ -140,10 +140,11 @@
         line-height: 1.33333;
         letter-spacing: 0.01em;
     }  
-    .about-me {
+    .about-me-top-line-item-bio {
         background-image: url(../img/hero-img/bg-2-min.png);
         background-repeat: no-repeat;
-        background-position: 85% 75%;
+        background-clip: content-box;
+        background-position: left bottom;
     }
 }
 @media screen and (min-width: 1280px) {
