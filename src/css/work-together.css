@@ -1,7 +1,3 @@
-.co-work > .container {
-  max-width: 320px;
-  width: 100%;
-}
 .error-message {
   font-family: Poppins;
   font-size: 12px;
@@ -16,6 +12,9 @@
   padding-bottom: 80px;
 }
 
+.modal-closeBtn-icon {
+  stroke: white;
+}
 .co-work-span {
   color: #f0f0f0;
 }
@@ -117,6 +116,7 @@
   background-color: #2a2d32;
 }
 .co-work-message {
+  margin-top: 28px;
   box-sizing: border-box;
   resize: none;
   padding: 16px;
@@ -152,11 +152,6 @@
 }
 
 /* MODAL WINDOW */
-/* 
-.modal > .container {
-  max-width: 320px;
-  width: 100%;
-} */
 
 .modal {
   display: none;
@@ -235,14 +230,14 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-  /* .co-work > .container {
-    max-width: 704px;
-    width: 100%;
-  } */
-
   .co-work {
     padding-top: 124px;
     padding-bottom: 124px;
+    background-image: url('./img/hero-img/bg-3-min.png');
+    background-size: cover;
+    background-position: top;
+    padding-top: 50px; /* Adjust based on your design */
+    color: #fff;
   }
 
   .co-work-title {
@@ -291,11 +286,6 @@
 /* DESCTOPE */
 
 @media screen and (min-width: 1280px) {
-  .co-work > .container {
-    max-width: 1216px;
-    width: 100%;
-  }
-
   .co-work-wrap {
     display: flex;
     flex-wrap: nowrap;
@@ -347,11 +337,6 @@
   }
 
   /* MODAL WINDOW */
-
-  .modal > .container {
-    max-width: 492px;
-    width: 100%;
-  }
 
   .modal-message {
     width: 364px;
