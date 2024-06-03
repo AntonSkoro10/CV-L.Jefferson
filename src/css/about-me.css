@@ -59,6 +59,12 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 1280px) {
+  .about-me-img {
+    margin-left: 104px;
+  }
+}
+
 /* ==== dscr ==== */
 .about-me-dscr-list {
   display: flex;
