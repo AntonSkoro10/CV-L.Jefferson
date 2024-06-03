@@ -30,7 +30,7 @@
 }
 
 .projects-item-img {
-  border-radius: 16px;
+  border-radius: 18px;
   margin-bottom: 12px;
 }
 
@@ -135,7 +135,7 @@
   }
 
   .projects-item-img {
-    border-radius: 24px;
+    border-radius: 28px;
     margin-bottom: 16px;
   }
 
