@@ -153,6 +153,10 @@
     margin-top: 276px;
   }
 
+  .faq-item.ac {
+    width: 592px;
+  }
+
   .faq-item.ac .faq-title-n-btn.ac-header {
     width: 544px;
   }
