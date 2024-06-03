@@ -118,7 +118,7 @@
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='false'] .faq-svg-up {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='true'] .faq-svg-down {
