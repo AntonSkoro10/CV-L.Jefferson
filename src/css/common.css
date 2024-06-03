@@ -3,10 +3,13 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
-  color: #f0f0f0;
-  background-color: #1e2023;
-
+  --primary-text-color: #f0f0f0;
+    --primary-bcg-color: #1e2023;
+    --accent-color: #14c57c;
+    --accent-bcg: #204136;
+    --second-accent-bcg: #2a2d32;
+    --bcg-modal: rgba(30, 32, 35, 0.8);
+    --third-accent-bcg: rgba(20, 197, 124, 0.1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +26,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+body {
+  background-color: var(--primary-bcg-color);
+  color: var(--primary-text-color);
 }
 
 p:last-child {
@@ -69,5 +77,12 @@ img {
   .container {
     max-width: 1280px;
     padding: 0 136px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .container {
+    min-width: 320px;
+    max-width: 360px;
   }
 }
