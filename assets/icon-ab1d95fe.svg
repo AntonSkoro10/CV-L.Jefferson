@@ -59,5 +59,13 @@
     <symbol id="icon-arrow" viewBox="0 0 32 32">
       <path fill="none" stroke="#00b068" style="stroke:var(--color4, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M6.333 25.667 25.666 6.334m.001-.001h-18m18 0v18"/>
     </symbol>
+    <symbol id="icon-arrow-next" viewBox="0 0 32 32">
+<path fill="none" stroke="#f0f0f0" style="stroke: var(--color1, #f0f0f0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M5.333 16h21.333"></path>
+<path fill="none" stroke="#f0f0f0" style="stroke: var(--color1, #f0f0f0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M18.667 8l8 8-8 8"></path>
+</symbol>
+<symbol id="icon-arrow-prev" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 16h-21.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M13.333 8l-8 8 8 8"></path>
+</symbol>
 </defs>
 </svg>
