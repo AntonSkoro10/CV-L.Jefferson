@@ -78,8 +78,16 @@
   height: 232px;
   background: #2a2d32;
   margin-top: 70px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+
+letter-spacing: 0.5px;
+
 }
-.icon {
+.icon-hero {
   margin-right: 10px;
   display: inline-block;
   width: 1em;
@@ -96,9 +104,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  section:not(:last-child) {
-    margin-bottom: 64px;
-  }
+ 
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-8-min.png');
     padding-top: 80px;
@@ -135,12 +141,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  section:first-child {
-    margin-bottom: 96px;
-  }
-  section:not(:last-child) {
-    margin-bottom: 164px;
-  }
+ 
 
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-1-min.png');
