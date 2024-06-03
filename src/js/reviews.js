@@ -1,85 +1,118 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const buttonNext = document.querySelector('.swiper-button-next');
-const buttonPrev = document.querySelector('.swiper-button-prev');
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+const reviewsList = document.querySelector('#reviews-list');
+const buttonPrev = document.querySelector('#button-prev');
+const buttonNext = document.querySelector('#button-next');
+
+let quantitySlides;
+let flag = true;
 
 async function fetchReviews() {
   try {
     const response = await fetch(
       'https://portfolio-js.b.goit.study/api/reviews'
     );
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+    if (response.status != 200) {
+      throw new Error('Failed to fetch reviews');
     }
-    return await response.json();
+
+    const reviews = await response.json();
+    flag = true;
+    return reviews;
   } catch (error) {
-    alert('Fetch error: ' + error.message);
-    console.error('Fetch error:', error);
-    return null;
+    iziToast.error({
+      title: 'Error',
+      message: 'Sorry, something went wrong with reviews.',
+    });
+    return error;
   }
 }
 
-function createSwiper() {
-  new Swiper('.swiper', {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    loop: false,
-    navigation: {
-      nextEl: buttonNext,
-      prevEl: buttonPrev,
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    mousewheel: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-    },
-    on: {
-      reachEnd: function () {
-        buttonNext.classList.add('disabled');
-      },
-      reachBeginning: function () {
-        buttonPrev.classList.add('disabled');
-      },
-      fromEdge: function () {
-        buttonNext.classList.remove('disabled');
-        buttonPrev.classList.remove('disabled');
-      },
-    },
-  });
+function setQSlides() {
+  const windowWidth = window.innerWidth;
+  quantitySlides = windowWidth < 1280 ? 1 : 2;
 }
 
-function createMarkup(review) {
-  return `<li class="swiper-slide review">
-    <p class="review-text">${review.review}</p>
-    <div class="swiper-img-container">
-      <img class="reviews-img" src="${review.avatar_url}" alt="Avatar">
-      <h3 class="name">${review.author}</h3>
-    </div>
-  </li>`;
+function createMarkup(reviews) {
+  reviewsList.innerHTML = reviews
+    .map(
+      review => `
+    <li class="swiper-slide">
+          <p class="slide-text">${review.review}</p>
+          <div class="swiper-user">
+            <img
+              src="${review.avatar_url}"
+              alt="Reviewer"
+              class="reviews-image"
+              width="40"
+              height="40"
+              loading="lazy"
+            />
+            <p class="reviews-name">${review.author}</p>
+          </div>
+        </li>
+    `
+    )
+    .join('');
 }
 
-async function FetchMarkup(createSwiper, createMarkup) {
-  const reviewsList = document.querySelector('#reviews-list');
-  if (!reviewsList) {
-    console.error('Element #reviews-list not found');
-    return;
+function errorList() {
+  reviewsList.innerHTML =
+    '<p class="slide-text error">Not Found</p>';
+}
+
+async function loadReviews() {
+  try {
+    const reviews = await fetchReviews();
+    createMarkup(reviews);
+    const swiper = new Swiper('.swiper', {
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
+      },
+
+      slidesPerView: quantitySlides,
+      slidesPerGroup: quantitySlides,
+      spaceBetween: 32,
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+
+      mousewheel: {
+        sensitivity: 1,
+      },
+
+      autoHeight: false,
+      observer: true,
+      on: {
+        slideChange: function () {
+          const { isBeginning, isEnd } = swiper;
+          buttonPrev.disabled = isBeginning;
+          buttonNext.disabled = isEnd;
+        },
+      },
+    });
+
+    flag = true;
+  } catch {
+    errorList();
+    flag = false;
   }
-
-  const reviews = await fetchReviews();
-  if (!reviews) {
-    reviewsList.innerHTML = 'Not found';
-    return;
-  }
-
-  const markup = reviews.map(review => createMarkup(review)).join('');
-  reviewsList.innerHTML = markup;
-  createSwiper();
 }
 
-FetchMarkup(createSwiper, createMarkup);
+setQSlides();
+loadReviews();
+
+window.addEventListener('resize', function () {
+  if (flag) {
+    setQSlides();
+    loadReviews();
+  }
+});

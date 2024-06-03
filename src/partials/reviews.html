@@ -1,11 +1,23 @@
 <section class="reviews">
-    <h3 class="reviews-title">REVIEWS</h3>
+  <div class="container container-reviews">
+    <div class="reviews-header">
+      <h1 class="reviews-title">reviews</h1>
+    </div>
     <div class="swiper">
       <ul class="swiper-wrapper" id="reviews-list"></ul>
-      <div class="button-container">
-      <button class="swiper-button swiper-button-prev"></button>
-      <button class="swiper-button swiper-button-next"></button>
+
+      <div class="swiper-prev-next">
+        <div class="swiper-button-prev" id="button-prev">
+          <svg class="reviews-icon">
+            <use href="./img/svg/icons.svg#icon-left_arrow"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" id="button-next">
+          <svg class="reviews-icon">
+            <use href="./img/svg/icons.svg#icon-right_arrow"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-    </div>
-    <p id="error-message"></p>
-  </section>
+  </div>
+</section>
