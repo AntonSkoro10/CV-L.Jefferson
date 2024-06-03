@@ -21,16 +21,15 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
+
 .footer-logo-span {
   color: #14c57c;
 }
+
 .footer-social-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.footer-list-item {
 }
 
 .footer-item-link {
@@ -40,6 +39,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
+
 .footer-copyright {
   font-weight: 300;
   font-size: 16px;
