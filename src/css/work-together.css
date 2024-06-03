@@ -37,7 +37,7 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  color: #f0f0f0;
+  color: var(--primary-text-color);
 
   text-transform: uppercase;
 }
@@ -94,8 +94,8 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  color: #f0f0f0;
-  background-color: #2a2d32;
+  color: var(--primary-text-color);
+  background-color: var(--second-accent-bcg);
   border: none;
   border-radius: 10px;
 }
@@ -105,7 +105,7 @@
   outline: none;
   border: none;
   box-shadow: none;
-  background-color: #2a2d32;
+  background-color: var(--second-accent-bcg);
 }
 
 .co-work-user:focus,
@@ -113,7 +113,7 @@
   outline: none;
   border: none;
   box-shadow: none;
-  background-color: #2a2d32;
+  background-color: var(--second-accent-bcg);
 }
 .co-work-message {
   margin-top: 28px;
@@ -132,7 +132,7 @@
   background-color: #00b068;
   border: none;
   border-radius: 10px;
-  color: #f0f0f0;
+  color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -148,7 +148,7 @@
 }
 
 .co-work-contact-icon {
-  fill: #14c57c;
+  fill: var(--accent-color);
 }
 
 /* MODAL WINDOW */
@@ -170,13 +170,9 @@
 
 .modal-content {
   text-align: center;
-  padding-top: 48px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 48px;
-
+  padding: 48px 32px;
   position: relative;
-  background-color: #2a2d32;
+  background-color: var(--second-accent-bcg);
   border: none;
   width: 80%;
   border-radius: 10px;
@@ -206,6 +202,7 @@
   text-align: center;
   height: 96px;
   width: 100%;
+  font-weight: 400;
 }
 
 .modal-message {
@@ -215,7 +212,7 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
   text-align: center;
-  color: white;
+  color: var(--primary-text-color);
   width: 100%;
 }
 
@@ -237,7 +234,7 @@
     background-size: cover;
     background-position: top;
     padding-top: 50px; /* Adjust based on your design */
-    color: #fff;
+    color: var(--primary-text-color);
   }
 
   .co-work-title {
@@ -268,15 +265,9 @@
     width: 173px;
   }
   /* MODAL WINDOW */
-  .modal > .container {
-    max-width: 492px;
-    width: 100%;
-  }
+
   .modal-content {
-    padding-top: 64px;
-    padding-left: 64px;
-    padding-right: 20px;
-    padding-bottom: 64px;
+    padding: 64px;
   }
   .modal-closeBtn {
     margin-bottom: 20px;
