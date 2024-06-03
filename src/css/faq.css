@@ -11,7 +11,7 @@
 }
 
 .faq-title-green {
-  color: #14c57c;
+  color: var(--accent-color);
 }
 
 .faq-bcg-img {
@@ -57,7 +57,7 @@
 
 .faq-item.ac {
   padding: 28px 24px;
-  background-color: #1e2023;
+  background-color: var(--primary-bcg-color);
   border-top: none;
   border-right: none;
   border-left: none;
@@ -67,7 +67,7 @@
 }
 
 .faq-item.ac.active {
-  background-color: #204136;
+  background-color: var(--accent-bcg);
   border: none;
   border-radius: 16px;
 }
@@ -97,7 +97,7 @@
 }
 
 .faq-svg {
-  fill: #f0f0f0;
+  fill: var(--primary-text-color);
   transition: transform 300ms ease;
 }
 
@@ -108,7 +108,7 @@
 
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #f0f0f0;
+  color: var(--primary-text-color);
 
   padding: 24px 0 0 0;
 }
@@ -118,13 +118,11 @@
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='false'] .faq-svg-up {
-  /* background-color: #1e2023; */
   transform: rotate(180deg);
 }
 
 .faq-item.ac .ac-trigger[aria-expanded='true'] .faq-svg-down {
   transform: rotate(180deg);
-  /* background-color: #1e2023; */
 }
 
 /* Tablet */
