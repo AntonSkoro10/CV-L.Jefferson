@@ -1,3 +1,7 @@
+section#tech-skills {
+    margin-bottom: 0px;
+}
+
 .tech-skills {
     display: flex;
     flex-direction: column;
