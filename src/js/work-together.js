@@ -101,11 +101,13 @@ function handleSubmit(event) {
 }
 
 function createModal({ title, message }) {
+  const iconRelativePath = './img/icon.svg#icon-closex';
+  const iconUrl = new URL(iconRelativePath, import.meta.url).href;
   return `
       <div id="myModal" class="modal">
         <div class="modal-content">
           <button class="modal-closeBtn"><svg class="modal-closeBtn-icon" width="24" height="24">
-          <use href="/CV-L.Jefferson/assets/icon-593cbc5f.svg#icon-close"></use>
+          <use href="${iconUrl}"></use>
           </svg></button>
           <h3 class="modal-title">${title}</h3>
           <p class="modal-message">${message}</p>
