@@ -78,14 +78,13 @@
   height: 232px;
   background: #2a2d32;
   margin-top: 70px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 
-letter-spacing: 0.5px;
-
+  letter-spacing: 0.5px;
 }
 .icon-hero {
   margin-right: 10px;
@@ -104,7 +103,6 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 768px) {
- 
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-8-min.png');
     padding-top: 80px;
@@ -141,8 +139,6 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 1280px) {
- 
-
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-1-min.png');
     padding-top: 80px;
@@ -176,4 +172,9 @@ letter-spacing: 0.5px;
     width: 261px;
     height: 96px;
   }
+}
+
+.hero-animation:hover,
+.hero-animation:focus {
+  color: var(--accent-color);
 }
