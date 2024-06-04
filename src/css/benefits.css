@@ -29,10 +29,10 @@
   display: none;
 }
 
-.benefits-div {
-  /* width: 100%;
-  height: auto; */
-}
+/* .benefits-div {
+  width: 100%;
+  height: auto;
+} */
 
 .benefits-list {
   width: 100%;
@@ -60,6 +60,11 @@
 
 .benefits-svg {
   stroke: #14c57c;
+}
+
+.benefits-icon:hover,
+.benefits-icon:focus {
+  background-color: #009156;
 }
 
 .benefits-list-item {
