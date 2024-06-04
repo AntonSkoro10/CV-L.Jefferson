@@ -27,6 +27,7 @@
   color: rgba(20, 197, 124, 1);
 }
 .hero-button {
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -51,6 +52,10 @@
 
   background: rgba(20, 197, 124, 0.2);
   border-radius: 16px;
+}
+.hero-button:hover .hero-button-spam {
+  background: rgba(20, 197, 124, 0.6);
+  transition: background-color 500ms linear;
 }
 .hero-paragraf {
   margin-top: 70px;
@@ -78,14 +83,17 @@
   height: 232px;
   background: #2a2d32;
   margin-top: 70px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 
-letter-spacing: 0.5px;
-
+  letter-spacing: 0.5px;
+}
+.hero-contact-li:hover {
+  color: rgba(20, 197, 124, 1);
+  transition: color 500ms linear;
 }
 .icon-hero {
   margin-right: 10px;
@@ -104,7 +112,6 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 768px) {
- 
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-8-min.png');
     padding-top: 80px;
@@ -124,6 +131,12 @@ letter-spacing: 0.5px;
   .hero-paragraf {
     width: auto;
   }
+  .hero-button{
+    width: auto;
+  }
+  .hero-button-spam{
+    width: 261px;
+  }
   .hero-contact {
     display: flex;
     flex-direction: row;
@@ -141,8 +154,6 @@ letter-spacing: 0.5px;
 }
 
 @media screen and (min-width: 1280px) {
- 
-
   .hero-backgrond {
     background-image: url('../img/hero-img/bg-1-min.png');
     padding-top: 80px;
