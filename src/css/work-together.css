@@ -71,6 +71,11 @@
   margin-right: 16px;
 }
 
+.co-work-after-title {
+  height: 84px;
+  width: 320px;
+}
+
 /* FORM */
 
 .co-work-form-wrap {
@@ -236,7 +241,7 @@
   }
 
   .co-work-title {
-    background-image: url(./img/hero-img/bg-2-min.png);
+    background-image: url(./img/hero-img/bg-3-min.png);
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position: left;
@@ -247,10 +252,11 @@
     text-align: left;
   }
   .co-work-after-title {
+    width: 488px;
+    height: 64px;
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    width: 488px;
   }
 
   /* FORM */
