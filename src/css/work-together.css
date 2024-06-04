@@ -39,6 +39,7 @@
   letter-spacing: 0.5px;
   color: var(--primary-text-color);
 
+  height: 84px;
   text-transform: uppercase;
 }
 .co-work-contact-list {
@@ -230,14 +231,15 @@
   .co-work {
     padding-top: 124px;
     padding-bottom: 124px;
-    background-image: url('./img/hero-img/bg-3-min.png');
-    background-size: cover;
-    background-position: top;
     padding-top: 50px; /* Adjust based on your design */
     color: var(--primary-text-color);
   }
 
   .co-work-title {
+    background-image: url(./img/hero-img/bg-2-min.png);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: left;
     margin-bottom: 63px;
     font-size: 108px;
     line-height: 1.1;
