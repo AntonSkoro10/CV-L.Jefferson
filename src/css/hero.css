@@ -27,6 +27,7 @@
   color: rgba(20, 197, 124, 1);
 }
 .hero-button {
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -51,6 +52,10 @@
 
   background: rgba(20, 197, 124, 0.2);
   border-radius: 16px;
+}
+.hero-button:hover .hero-button-spam {
+  background: rgba(20, 197, 124, 0.6);
+  transition: background-color 500ms linear;
 }
 .hero-paragraf {
   margin-top: 70px;
@@ -85,6 +90,10 @@
   line-height: 24px;
 
   letter-spacing: 0.5px;
+}
+.hero-contact-li:hover {
+  color: rgba(20, 197, 124, 1);
+  transition: color 500ms linear;
 }
 .icon-hero {
   margin-right: 10px;
@@ -121,6 +130,12 @@
   }
   .hero-paragraf {
     width: auto;
+  }
+  .hero-button{
+    width: auto;
+  }
+  .hero-button-spam{
+    width: 261px;
   }
   .hero-contact {
     display: flex;
@@ -172,9 +187,4 @@
     width: 261px;
     height: 96px;
   }
-}
-
-.hero-animation:hover,
-.hero-animation:focus {
-  color: var(--accent-color);
 }
