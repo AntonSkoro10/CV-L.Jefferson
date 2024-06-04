@@ -2,6 +2,10 @@
   padding: 40px 0 46px;
 }
 
+.projects > .container {
+  padding: 0 20px;
+}
+
 .projects-title {
   font-family: 'Impact', sans-serif;
   font-size: 52px;
@@ -125,6 +129,10 @@
     padding: 62px 0 68px;
   }
 
+  .projects > .container {
+    padding: 0 32px;
+  }
+
   .projects-title {
     font-size: 108px;
   }
@@ -161,6 +169,10 @@
 @media screen and (min-width: 1280px) {
   .projects {
     padding: 82px 0;
+  }
+
+  .projects > .container {
+    padding: 0 136px;
   }
 
   .projects-title {
