@@ -100,21 +100,23 @@ function handleSubmit(event) {
     });
 }
 
+// Import the SVG icon
+import image from '/img/icon.svg';
+
 function createModal({ title, message }) {
-  const iconRelativePath = './img/icon.svg#icon-close';
   return `
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <button class="modal-closeBtn">
-            <svg class="modal-closeBtn-icon" width="24" height="24">
-              <use href="${iconRelativePath}"></use>
-            </svg>
-          </button>
-          <h3 class="modal-title">${title}</h3>
-          <p class="modal-message">${message}</p>
-        </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-closeBtn">
+          <svg class="modal-closeBtn-icon" width="24" height="24">
+            <use href="${image}#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title">${title}</h3>
+        <p class="modal-message">${message}</p>
       </div>
-    `;
+    </div>
+  `;
 }
 
 function addModalCloseEventListener() {
