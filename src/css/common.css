@@ -4,12 +4,12 @@
   line-height: 24px;
   font-weight: 400;
   --primary-text-color: #f0f0f0;
-    --primary-bcg-color: #1e2023;
-    --accent-color: #14c57c;
-    --accent-bcg: #204136;
-    --second-accent-bcg: #2a2d32;
-    --bcg-modal: rgba(30, 32, 35, 0.8);
-    --third-accent-bcg: rgba(20, 197, 124, 0.1);
+  --primary-bcg-color: #1e2023;
+  --accent-color: #14c57c;
+  --accent-bcg: #204136;
+  --second-accent-bcg: #2a2d32;
+  --bcg-modal: rgba(30, 32, 35, 0.8);
+  --third-accent-bcg: rgba(20, 197, 124, 0.1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 300;
   src: local('Poppins Light'),
-    url('https://fonts.gstatic.com/s/poppins/v15/pxiDyp8kv8JHgFVrLPTed3FBGPaTSQ.woff2') format('woff2');
+    url('./fonts/Poppins-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Poppins Regular'),
-    url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlEA.woff2') format('woff2');
+    url('./fonts/Poppins-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 500;
   src: local('Poppins Medium'),
-    url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlEA.woff2') format('woff2');
+    url('./fonts/Poppins-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -46,7 +46,7 @@
   font-style: normal;
   font-weight: 600;
   src: local('Poppins SemiBold'),
-    url('https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlEA.woff2') format('woff2');
+    url('./fonts/Poppins-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -54,7 +54,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Montserrat Regular'),
-    url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2') format('woff2');
+    url('./fonts/Montserrat-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -62,7 +62,7 @@
   font-style: normal;
   font-weight: 600;
   src: local('Montserrat SemiBold'),
-    url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2') format('woff2');
+    url('./fonts/Montserrat-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -70,22 +70,21 @@
   font-style: normal;
   font-weight: 700;
   src: local('Montserrat Bold'),
-    url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2') format('woff2');
+    url('./fonts/Montserrat-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: local('Inter Bold'),
-    url('https://fonts.gstatic.com/s/inter/v3/UcCo3Gq9Sv2MH6B7DYQQ9U6o.woff2') format('woff2');
+  src: local('Inter Bold'), url('./fonts/Inter-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Impact';
   font-style: normal;
   font-weight: 400;
-  src: url('./public/impact.ttf') format('truetype');
+  src: url('./fonts/impact.woff2') format('woff2');
 }
 
 /* Reset styles */
@@ -135,7 +134,6 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 }
-
 
 @media screen and (min-width: 768px) {
   .container {
